@@ -38,3 +38,7 @@ To display widget in game your need connect widget to existing node.
 Triple click on debug zone and see result:
 
 <img src="https://git.playflock.com/github-enterprise-assets/0000/0012/0000/0046/50ff3428-2681-11e6-8e3c-556527af3279.gif">
+
+You can also use ready-made crossplatform console:
+
+<img src="https://cloud.githubusercontent.com/assets/7010398/15651246/0c11dbd0-2687-11e6-9a3c-0fb85bfa8529.PNG">
