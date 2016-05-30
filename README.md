@@ -1,2 +1,4 @@
-# HUDDebug
-Unity 5 console module
+HUDWidget_Unity
+===============
+
+Console module for log stack trace on mobile devices
