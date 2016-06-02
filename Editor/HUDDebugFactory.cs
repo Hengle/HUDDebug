@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using UnityEngine;
 using UnityEditor;
 using System.CodeDom;
@@ -181,19 +181,21 @@ namespace Playflock.Log
 
         void OnGUI()
         {
-            if (System.String.IsNullOrEmpty(_rootPath))
-            {
-                _rootPath = EditorPrefs.GetString("rootPath");
-                EditorGUILayout.HelpBox("Please select root directory of HUDDebug", MessageType.Error);
-            }
             if (!isEditorBusy)
             {
+                var isRootPathEmpty = String.IsNullOrEmpty( _rootPath );
+                if (isRootPathEmpty)
+                {
+                    _rootPath = EditorPrefs.GetString("rootPath");
+                    EditorGUILayout.HelpBox("Please select root directory of HUDDebug", MessageType.Error);
+                }
                 GUILayout.BeginHorizontal();
                 GUILayout.Label("Root path : " + _rootPath);
                 if (GUILayout.Button("Select folder"))
                 {
                     var path = EditorUtility.OpenFolderPanel("Select HUDDebug folder", "Assets", "");
                     EditorPrefs.SetString("rootPath", path);
+                    _rootPath = path;
                 }
                 GUILayout.EndHorizontal();
                 GUILayout.Space(50f);
