@@ -43,4 +43,4 @@ You can also use ready-made crossplatform console:
 
 <img src="https://cloud.githubusercontent.com/assets/7010398/15651246/0c11dbd0-2687-11e6-9a3c-0fb85bfa8529.PNG">
 
-If you wan't to share your custom widget, please send me mail on **indieypdev@gmail.com**
+If you want to share your custom widget, please send me mail on **indieypdev@gmail.com**
