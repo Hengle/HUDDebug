@@ -119,10 +119,7 @@ namespace Playflock.Log
             rootNode.GetComponent<Button>().onClick.AddListener( RootNodeClick );
 
             //Check nodes on property "isActiveOnStart"
-            foreach ( var rNode in rootNodes )
-            {
-                rNode.node.OnToggle(rNode.isActiveOnStart);
-            }
+            RecursivePass( ref rootNodes );
         }
 
 
@@ -230,6 +227,15 @@ namespace Playflock.Log
             float y = Mathf.Cos( angle ) * radius.y;
             pos = center + new Vector3( x, y );
             return pos;
+        }
+        
+        private void RecursivePass( ref List<RootNode> rNodes )
+        {
+            foreach ( var n in rNodes )
+            {
+                n.node.OnToggle( n.isActiveOnStart );
+                RecursivePass( ref n.node.includeNodes );
+            }
         }
 
 #endregion
