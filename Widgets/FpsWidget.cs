@@ -34,7 +34,7 @@ namespace Playflock.Log.Widget
             {
                 float fps = _accum / _frames;
                 _fpsText.text = fps.ToString("f" + Mathf.Clamp(1, 0, 10));
-                _color = (fps >= 30) ? Color.green : ((fps > 10) ? Color.red : Color.yellow);
+                _color = (fps >= 30) ? Color.green : ((fps > 10) ? Color.yellow : Color.red);
                 _fpsText.color = _color;
                 _accum = 0f;
                 _frames = 0;
