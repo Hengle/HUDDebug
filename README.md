@@ -1,7 +1,7 @@
 HUDDebug v 2.0
 ===============
 
-[![https://gitter.im/indieyp/HUDDebug](https://img.shields.io/gitter/room/gitterHQ/gitter.svg)]()
+[![https://gitter.im/indieyp/HUDDebug](https://img.shields.io/gitter/room/gitterHQ/gitter.svg)](https://gitter.im/indieyp/HUDDebug)
 
 [![donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5VW3E89ZUYYXC)
 
