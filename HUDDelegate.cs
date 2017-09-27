@@ -89,6 +89,7 @@ namespace Playflock.Log
                 gameObject.SetActive( false );
             instance = this;
             DontDestroyOnLoad( this.gameObject );
+            PlayerPrefs.SetInt("RemoteDebugSession", 0);
             //Hidden Open Btn
             preferences.openBtn.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
             previousNodeID = 0;
