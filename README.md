@@ -5,7 +5,7 @@ HUDDebug v 2.0
 
 [![donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5VW3E89ZUYYXC)
 
-Unity 5 console module for log stack trace on mobile devices.
+Unity (5.3.4 or higher) console module for log stack trace on mobile devices.
 
 Installation
 -------------
